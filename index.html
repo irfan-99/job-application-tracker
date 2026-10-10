@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>JobTrack</h1>
+    <p>Manage your career journey in one place.</p>
+  </header>
+
+  <main>
+    <section class="stats">
+      <div class="card">
+        <h3>Total Applications</h3>
+        <p id="total">0</p>
+      </div>
+      <div class="card">
+        <h3>Interviews</h3>
+        <p id="interviews">0</p>
+      </div>
+      <div class="card">
+        <h3>Selected</h3>
+        <p id="selected">0</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Add Job Application</h2>
+
+      <form id="jobForm">
+        <input id="company" type="text"
+          placeholder="Company name" required>
+
+        <input id="role" type="text"
+          placeholder="Job role" required>
+
+        <input id="date" type="date" required>
+
+        <select id="status">
+          <option>Applied</option>
+          <option>Interview</option>
+          <option>Selected</option>
+          <option>Rejected</option>
+        </select>
+
+        <button type="submit">Add Application</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>My Applications</h2>
+
+      <input id="search" type="text"
+        placeholder="Search company or role...">
+
+      <select id="filter">
+        <option value="All">All statuses</option>
+        <option value="Applied">Applied</option>
+        <option value="Interview">Interview</option>
+        <option value="Selected">Selected</option>
+        <option value="Rejected">Rejected</option>
+      </select>
+
+      <div id="jobList"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
