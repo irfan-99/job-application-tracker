@@ -479,3 +479,9 @@ button:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Custom update: darker card hover effect */
+.card:hover {
+  transform: translateY(-7px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.25);
+}
